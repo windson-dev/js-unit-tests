@@ -18,6 +18,17 @@
   Caso a função seja chamada sem nenhum parâmetro, o valor undefined deve ser retornado.
 */
 
-const vqv = () => {};
+const vqv = (string, number) => {
+  let apresentation = `Oi, meu nome é ${string}!
+Tenho ${number} anos,
+trabalho na Trybe e mando muito em programação!
+#VQV!`;
+
+  if (string === undefined || number === undefined) {
+    return undefined;
+  }
+
+  return apresentation;
+};
 
 module.exports = vqv;
